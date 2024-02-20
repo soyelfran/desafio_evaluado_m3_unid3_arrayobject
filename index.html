@@ -145,7 +145,7 @@
     ];
 
     //Agregar código para el desafio 2 aquí
-    let traumatologiaCopia = traumatologia;
+    let traumatologiaCopia = [...traumatologia];
     traumatologiaCopia.push(
       {
         hora: "09:00",
@@ -186,7 +186,7 @@
     console.log(traumatologiaCopia);
 
     //copia de radiologia
-    radiologiaCopia = radiologia;
+    const radiologiaCopia = [...radiologia];
     radiologiaCopia.pop();
     radiologiaCopia.shift();
     console.log(radiologiaCopia);
@@ -201,7 +201,7 @@
     }
 
     //listado total de pacientes
-    let listadoPacientes = radiologia.concat(traumatologia);
+    let listadoPacientes = radiologiaCopia.concat(traumatologiaCopia);
     listadoPacientes = listadoPacientes.concat(dental);
     function mostrarListadoPacientes() {
       document.write(`<hr><p>LISTADO DE TODOS LOS PACIENTES</p>`);
