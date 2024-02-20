@@ -186,10 +186,10 @@
     console.log(traumatologiaCopia);
 
     //copia de radiologia
-
-    radiologia.pop();
-    radiologia.shift();
-    console.log(radiologia);
+    radiologiaCopia = radiologia;
+    radiologiaCopia.pop();
+    radiologiaCopia.shift();
+    console.log(radiologiaCopia);
 
     function mostrarConsultasDental() {
       document.write(`<hr><p>LISTADO DE CONSULTAS DENTALES</p>`);
